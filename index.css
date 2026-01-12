@@ -1,0 +1,33 @@
+/* 側欄基本樣式 */
+.sidebar {
+  height: 100%;
+  width: 0;           /* 預設寬度為 0，所以一開始是隱藏的 */
+  position: fixed;    /* 固定在畫面上 */
+  z-index: 1;         /* 確保在最上層 */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden; /* 隱藏溢出的內容 */
+  transition: 0.5s;   /* 讓收放過程有 0.5 秒的絲滑動畫 */
+  padding-top: 60px;
+}
+
+/* 側欄內的連結 */
+.sidebar a {
+  padding: 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* 當滑鼠移上去時變色 */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* 主內容區的動畫 */
+#main {
+  transition: margin-left .5s; /* 內容跟著側欄移動 */
+  padding: 20px;
+}
