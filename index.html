@@ -1,29 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>旅遊日誌</title>
+    <title>咖啡廳日誌</title>
     <link rel="stylesheet" href="index.css">
-     <link rel="shortcut icon" href="https://www.livly.com/picturebook/img/main/mono/motion/023-n-002/mono_furdot_P2_Idle.png">
+    <link rel="shortcut icon" href="https://www.livly.com/picturebook/img/main/mono/motion/023-n-002/mono_furdot_P2_Idle.png">
 
 </head>
 <body>
 
-
-    <div id="mySidebar" class="sidebar">
+ <div id="mySidebar" class="sidebar">
   <button class="close-btn" onclick="toggleNav()">×</button>
   <a href="#">HOME</a>
   <a href="#" target="new">小組專題</a>
-  <a href="#" target="new">(施工中)</a>
-  <a href="#" target="new">先不要點，會破壞驚喜</a>
+  <a href="#" target="_top">(施工中)</a>
+  <a href="#" target="_top">先不要點，會破壞驚喜</a>
 </div>
 
 <div id="main">
   <button class="open-btn" onclick="toggleNav()">☰</button>
-  <h2>旅遊日誌</h2>
-  <p></p>
+  <h2>咖啡廳推薦</h2>
+  <p class=h2annotation> 紀錄一些曾去過的咖啡廳作為紀念
+  <br>不過我不擅長品鑑咖啡因此這篇的飲品不會有咖啡:P
+  </p>
 </div>
+
+<hr class="hr-twill-colorful">
+
+<aside>
+  <h4>咻咻咻抵達</h4>
+  <hr class="hr-double-arrow">
+  <p><a href="#A1">三奇壹號X築甜製菓</a></p>
+  <p><a href="#A2">寂人甜食</a></p>
+</aside>
+
+<article id="article">
+<h3 id="A1" class=tittle>三奇壹號X築甜製菓</h3>
+<p>基隆非常有名的一家甜點店!可以說是一定要來❣️
+<br>主打千層蛋糕，也有販賣蛋糕捲及其他種類的蛋糕。逢年過節也有禮盒(不過我沒有試過哈哈哈)。
+<br>綜合水果、巧克力及抹茶是熱賣，入口即化的等級
+<br>(偷偷說，如果想讓年紀較長的長輩試試新口味的話推薦綜合水果--有古早水果風味也有新奇的綿密千層口感(❁´◡`❁)
+<br><iframe style="text-align:center;" 
+src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d7224.2460366643!2d121.7435145!3d25.1315315!3m2!1i1024!2i768!4f13.1!2m1!1z5LiJ5aWH5aO56Jmf!5e0!3m2!1szh-TW!2stw!4v1768807250065!5m2!1szh-TW!2stw" 
+width="200" height="150" style="border:0;" 
+allowfullscreen="" loading="lazy"
+ referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+</p>
+</article>
+
+<h3 id="A2" class=tittle>寂人甜食</h3>
+<p>基隆有很多千層蛋糕，多的有點不利於蛋糕生態圈的多樣性(?)
+<br>因此非常推薦這家的戚風蛋糕!老闆很有創意，做了很多新奇的口味
+<br>個人非常喜歡他們家的糖漬檸檬桂花紅茶!!不會澀澀的(´▽`ʃ♡ƪ)
+<br><iframe style="text-align:center;" 
+src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.5016492046475!2d121.76549967437525!3d25.152533933510206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4fa98f8cbda5%3A0xde48ab48cb4ed6cc!2z5a-C5Lq655Sc6aOf77yI54ef5qWt5pel5pyf6KuL55yL6IeJ5pu45oiWSUfnva7poILmlofnq6DvvIk!5e0!3m2!1szh-TW!2stw!4v1768807498903!5m2!1szh-TW!2stw" 
+width="200" height="150" style="border:0;" 
+allowfullscreen="" loading="lazy" 
+referrerpolicy="no-referrer-when-downgrade"></iframe>
+</p>
+</article>
 
 <script src="index.js"></script>
 </body>

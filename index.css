@@ -1,3 +1,4 @@
+
 /* 側欄基本樣式 */
 .sidebar {
   height: 100%;
@@ -26,8 +27,84 @@
   color: #f1f1f1;
 }
 
+body { 
+  background-color: hsl(0, 100%, 93%); /* 淡色 */ 
+  font-family:微軟正黑體;
+}
+
 /* 主內容區的動畫 */
 #main {
-  transition: margin-left .5s; /* 內容跟著側欄移動 */
+  transition: margin-left 1.0s; /* 內容跟著側欄移動 */
   padding: 20px;
+}
+
+/*以下為更新*/
+
+h2{
+	text-align: center;
+	color: #4b1124;
+}
+
+.h2annotation{
+	text-align: center;
+	color: #38101d;
+}
+
+.hr-twill-colorful {
+  border: 0;
+  padding: 3px;
+  background: linear-gradient(135deg, red, orange,green, blue, purple);
+  --mask-image: repeating-linear-gradient(135deg, #000 0px, #000 1px, transparent 1px, transparent 6px);
+  -webkit-mask-image: var(--mask-image);
+  mask-image: var(--mask-image);
+}
+
+.tittle{
+	color: #4b1124;
+}
+
+aside {
+  background-color:rgb(179, 231, 201);
+  width: 20%; height: 1000px; 
+  float: right;
+  text-align: center;
+  a:link{color:rgb(5, 124, 75);}
+}
+
+aside a:hover{
+  color:rgb(241, 206, 109)
+}
+
+aside a:active{
+  color:rgb(7, 202, 124)
+}
+
+.hr-double-arrow {
+    color: #000000;
+    border: double;
+    border-width: 3px 5px;
+    border-color: #000000 transparent;
+    height: 1px;
+    overflow: visible;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+.hr-double-arrow:before, 
+.hr-double-arrow:after {
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    border-width: 0 3px 3px 0;
+    border-style: double;
+    top: -3px;
+    background: radial-gradient(2px at 1px 1px, currentColor 2px, transparent 0) no-repeat;
+}
+.hr-double-arrow:before {
+    transform: rotate(-45deg);
+    left: -20px;
+}
+.hr-double-arrow:after {
+    transform: rotate(135deg);
+    right: -20px;
 }
