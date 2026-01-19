@@ -51,6 +51,7 @@ h2{
 }
 
 .hr-twill-colorful {
+  font-size:50px ;
   border: 0;
   padding: 3px;
   background: linear-gradient(135deg, red, orange,green, blue, purple);
@@ -63,7 +64,24 @@ h2{
 	color: #4b1124;
 }
 
+a:link {
+  color: rgb(5, 124, 75);       /* 尚未點擊的連結 */
+}
+
+a:visited {
+  color: rgb(179, 206, 195);     /* 已經點擊過的連結 */
+}
+
+a:hover {
+  color: rgb(241, 206, 109);        /* 滑鼠移上去的連結 */
+}
+
+a:active {
+  color: rgb(7, 202, 124);     /* 點擊當下的連結 */
+}
+
 aside {
+  margin-right: 40px;
   background-color:rgb(179, 231, 201);
   width: 20%; height: 1000px; 
   float: right;
@@ -77,6 +95,18 @@ aside a:hover{
 
 aside a:active{
   color:rgb(7, 202, 124)
+}
+
+aside a:visited{
+   color: rgb(179, 206, 195); 
+}
+
+article{
+  margin-left: 50px;
+}
+
+p{
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .hr-double-arrow {
